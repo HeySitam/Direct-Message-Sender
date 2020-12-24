@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Direct Message Sender</string>
+    <string name="whatsapp">WHATSAPP</string>
+    <string name="telegram">TELEGRAM</string>
+    <string name="enter_a_number">Enter a number</string>
+    <string name="let_s_start">LET\'S START</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="open_whatsapp">OPEN WHATSAPP</string>
+</resources>

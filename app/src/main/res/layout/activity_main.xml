@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchWhatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@+id/imgLogo"
+        android:text="@string/whatsapp"
+        app:thumbTint="@drawable/checker_thumb_whatsapp"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        tools:ignore="RelativeOverlap" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchTelegram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_below="@+id/switchWhatsapp"
+        android:text="@string/telegram"
+        app:thumbTint="@drawable/checker_thumb_telegram"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:background="#d7ffd9"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="@string/enter_a_number"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOpener"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#d7ffd9"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:hint="@string/type_a_message"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnOpener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#25D366"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="@string/open_whatsapp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvStart"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/let_s_start"
+        android:textSize="50sp"
+        android:textColor="#1b5e20"
+        android:layout_below="@id/switchWhatsapp"
+        android:layout_marginTop="85dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="casual"/>
+
+
+</RelativeLayout>

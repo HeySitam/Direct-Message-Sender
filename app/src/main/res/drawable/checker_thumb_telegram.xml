@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--the thumb color changing logic of telegram opener switch-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#0088cc" android:state_checked="true"/>
+    <item android:color="#778899" android:state_checked="false"/>
+</selector>
