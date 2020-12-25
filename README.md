@@ -17,8 +17,9 @@
 ![Alt Text](https://media.giphy.com/media/TAr0M4Dq8qcDIdYQpm/giphy.gif)
 * We can open anyone's telegram directly by his/her username.
 
-![Alt Text](https://media.giphy.com/media/TAr0M4Dq8qcDIdYQpm/giphy.gif)
+![Alt Text](https://media.giphy.com/media/jfLTNjsWNjQgPfwB0r/giphy.gif)
 * We also don't need to open our app to open whatsapp. By selecting a number from outside of the app , we can directly open whatsapp. 
+
 ![Alt Text](https://media.giphy.com/media/rIp6tptYISNPNekSIR/giphy.gif)
  
 
