@@ -49,13 +49,11 @@
         android:layout_marginBottom="15dp"
         android:layout_marginRight="10dp"
         android:background="#d7ffd9"
-        android:fontFamily="casual"
         android:gravity="center"
         android:hint="@string/enter_a_number"
         android:inputType="number"
         android:padding="10dp"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="35sp" />
     <EditText
         android:id="@+id/etText"
         android:layout_width="match_parent"

@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity() {
                 etNumber.apply{
                     isVisible = true
                     hint = "Enter a number"
+                    requestFocus()
                     inputType = InputType.TYPE_CLASS_NUMBER
                     setBackgroundColor(Color.parseColor("#d7ffd9"))
                 }
@@ -146,11 +147,12 @@ class MainActivity : AppCompatActivity() {
                 var userName: String
                 etText.isVisible=false
                // etText.setBackgroundColor(Color.parseColor("#b6ffff"))
-                imgLogo.setImageResource(R.drawable.telegram_logo)
+                imgLogo.setImageResource(R.drawable.telegram_logo_sp)
                 tvStart.isVisible=false
                 switchWhatsapp.isEnabled=false
                 etNumber.apply{
                     isVisible = true
+                    requestFocus()
                     hint = "Enter a UserName"
                     inputType = InputType.TYPE_CLASS_TEXT
                     setBackgroundColor(Color.parseColor("#b6ffff"))
