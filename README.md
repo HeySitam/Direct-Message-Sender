@@ -12,13 +12,13 @@
 
 ### Application Description :
 
-* We can open anyone's whatsapp and send them a message directly by his/her number.
+* **We can open anyone's whatsapp and send them a message directly by his/her number.
 
 ![Alt Text](https://media.giphy.com/media/TAr0M4Dq8qcDIdYQpm/giphy.gif)
-* We can open anyone's telegram directly by his/her username.
+* **We can open anyone's telegram directly by his/her username.
 
 ![Alt Text](https://media.giphy.com/media/jfLTNjsWNjQgPfwB0r/giphy.gif)
-* We also don't need to open our app to open whatsapp. By selecting a number from outside of the app , we can directly open whatsapp. 
+* **We also don't need to open our app to open whatsapp. By selecting a number from outside of the app , we can directly open whatsapp. 
 
 ![Alt Text](https://media.giphy.com/media/rIp6tptYISNPNekSIR/giphy.gif)
  
