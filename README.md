@@ -7,3 +7,5 @@
 * For **whatsapp** you need the **number** of that person.
 * For **telegram** you need the **username** of that person.
 
+![Alt Text](https://media.giphy.com/media/USP6DMCPXvjQcRpoO1/giphy.gif)
+
