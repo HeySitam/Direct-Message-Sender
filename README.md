@@ -13,6 +13,8 @@
 ### Application Description :
 
 * We can open anyone's whatsapp and send them a message directly by his/her number.
+
+![Alt Text](https://media.giphy.com/media/TAr0M4Dq8qcDIdYQpm/giphy.gif)
 * We can open anyone's telegram directly by his/her username.
 * We also don't need to open our app to open whatsapp. By selecting a number from outside of the app , we can directly open whatsapp. 
 
