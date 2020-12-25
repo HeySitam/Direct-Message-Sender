@@ -1,27 +1,51 @@
 package com.sitamrock11.directmessagesender
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.net.ConnectivityManager
+import android.net.NetworkInfo
 import android.net.Uri
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
+import android.provider.Settings
 import android.text.InputType
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.isDigitsOnly
 import androidx.core.view.isVisible
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var num: String = "0"
+        //checking network
+        val isConnected=checkConnectivity(this)
+
+        //creating dialog box if network connection not Enable
+        val dialog=AlertDialog.Builder(this)
+        if(!isConnected){
+            dialog.setTitle("Can't Open App!!")
+            dialog.setMessage("Please Enable Your Internet Connection..")
+            dialog.setPositiveButton("ENABLE"){ _, _->
+                val intent = Intent(Settings.ACTION_DATA_USAGE_SETTINGS)
+                startActivity(intent)
+            }
+            dialog.setNegativeButton("EXIT"){ _, _->
+                finish()
+            }
+            dialog.create()
+            dialog.show()
+        }
+
         etNumber.isVisible = false
         etText.isVisible=false
         btnOpener.isVisible = false
@@ -79,17 +103,17 @@ class MainActivity : AppCompatActivity() {
                     if (!num.isEmpty()) {
                         if (num.isDigitsOnly()) {
                             if (num.length == 12 && num[0] == '9' && num[1] == '1') {
-                                openWhatsapp(num,text)
+                                openWhatsapp(num, text)
                             } else if (num.length == 10) {
                                 num = "91$num"
-                                openWhatsapp(num,text)
+                                openWhatsapp(num, text)
                             } else if ((num.length == 12 && num[0] != '9' && num[1] != '1') || num.length < 10 || num.length > 12) {
                                 Toast.makeText(this, "Please enter a valid number", Toast.LENGTH_SHORT).show()
                                 etNumber.text = null
                             }
                         } else if (num[0] == '+') {
                             num = num.substring(1)
-                            openWhatsapp(num,text)
+                            openWhatsapp(num, text)
                         } else {
                             Toast.makeText(this, "Please enter number digits only", Toast.LENGTH_SHORT).show()
                         }
@@ -178,7 +202,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     //opening whatsapp via intent
-    private fun openWhatsapp(num: String,text:String) {
+    private fun openWhatsapp(num: String, text: String) {
         val intent = Intent(Intent.ACTION_VIEW)
         intent.`package` = "com.whatsapp"
         intent.data = Uri.parse("https://api.whatsapp.com/send?phone=$num&text=$text")
@@ -191,7 +215,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     //opening telegram via intent
-    private fun openTelegram(userName:String){
+    private fun openTelegram(userName: String){
         val intent = Intent(Intent.ACTION_VIEW)
         intent.`package` = "org.telegram.messenger"
         intent.data = Uri.parse("https://t.me/$userName")
@@ -201,5 +225,16 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Please install Telegram", Toast.LENGTH_SHORT).show()
         }
         finish()
+    }
+
+    //checking Connectivity
+    fun checkConnectivity(context: Context):Boolean{
+        val connectivityManager=context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val activeNetwork: NetworkInfo?=connectivityManager.activeNetworkInfo
+        if(activeNetwork?.isConnected!=null){
+            return activeNetwork.isConnected
+        }else{
+            return false
+        }
     }
 }
