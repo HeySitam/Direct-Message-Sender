@@ -12,8 +12,8 @@
 
 ### Application Description :
 
-* We can open anyone's whatsapp and send them a message.
-* We can open anyone's telegram by his/her username.
+* We can open anyone's whatsapp and send them a message directly by his/her number.
+* We can open anyone's telegram directly by his/her username.
 * We also don't need to open our app to open whatsapp. By selecting a number from outside of the app , we can directly open whatsapp. 
 
  
