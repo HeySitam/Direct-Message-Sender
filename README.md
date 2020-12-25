@@ -4,12 +4,17 @@
 *Here I make a solution for that. Now you don't need to save his/her contact to your mobile.*
 *You can directly send message to any one on whatsapp and telegram without saving his/her contact.*
 
-#### Application Welcome UI
+#### Application Welcome UI :
 ![Alt Text](https://media.giphy.com/media/USP6DMCPXvjQcRpoO1/giphy.gif)
 
 * For **whatsapp** you need the **number** of that person.
 * For **telegram** you need the **username** of that person.
 
+### Application Description :
+
+* We can open anyone's whatsapp and send them a message.
+* We can open anyone's telegram by his/her username.
+* We also don't need to open our app to open whatsapp. By selecting a number from outside of the app , we can directly open whatsapp. 
 
  
 
