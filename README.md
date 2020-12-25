@@ -21,5 +21,12 @@
 * **We also don't need to open our app to open whatsapp. By selecting a number from outside of the app , we can directly open whatsapp.** 
 
 ![Alt Text](https://media.giphy.com/media/rIp6tptYISNPNekSIR/giphy.gif)
- 
+
+### My Implimentations  :
+
+1. I have used **Intent** with **ACTION_VIEW** and also used whatsapp and telegram API to open whatsapp and telegram respectively.
+2. I have used a third party library [Glide](https://github.com/bumptech/glide) to show GIF at ImageView.
+3. I make a theme to make activity transparent.
+4. I have implemented different themes for the ThumbTint of Switch drring check.
+5. I have checked network state.
 
