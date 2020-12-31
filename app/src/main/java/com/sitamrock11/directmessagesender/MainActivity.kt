@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
             if (isChecked) {
                 switchTelegram.isEnabled=false
                 etText.isVisible=true
-                etText.setBackgroundColor(Color.parseColor("#d7ffd9"))
+                etText.setBackgroundResource(R.drawable.custom_background)
                 tvStart.isVisible=false
                 imgLogo.setImageResource(R.drawable.whatsapp_logo)
                 etNumber.apply{
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                     hint = "Enter a number"
                     requestFocus()
                     inputType = InputType.TYPE_CLASS_NUMBER
-                    setBackgroundColor(Color.parseColor("#d7ffd9"))
+                    setBackgroundResource(R.drawable.custom_background)
                 }
                 btnOpener.apply{
                     isVisible = true
